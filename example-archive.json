@@ -1,0 +1,69 @@
+{
+  "name": "cool-channel",
+  "id": "86913608335773696",
+  "topic": "This channel is for cool people only",
+  "roles": {
+    "419085713049855234": {
+      "color": 15158332,
+      "name": "cool people",
+      "sorted": true
+    }
+  },
+  "userdata": {
+    "237593967137390592": {
+      "lastAvatar": "https://cdn.discordapp.com/avatars/237593967137390592/15094bba719a7dc06de49efa81fe2ce9.webp",
+      "lastNickname": "Christian",
+      "lastUsername": "TK",
+      "lastTag": 7340,
+      "topRole": "419085713049855234",
+      "userType": 0
+    },
+    "237593967137390593": {
+      "lastAvatar": "https://cdn.discordapp.com/avatars/237593967137390592/15094bba719a7dc06de49efa81fe2ce9.webp",
+      "lastNickname": "Not Christian",
+      "lastUsername": "Not TK",
+      "lastTag": 7341,
+      "userType": 1
+    },
+    "237593967137390590": {
+      "lastAvatar": "https://discord.com/assets/6debd47ed13483642cf09e832ed0bc1b.png",
+      "lastNickname": "",
+      "lastUsername": "Captain Hook",
+      "lastTag": 0,
+      "userType": 2
+    }
+  },
+  "messages": [
+    {
+      "id": "749116083357736960",
+      "author": "237593967137390592",
+      "content": "",
+      "embeds": [],
+      "attachments": [
+        "https://cdn.discordapp.com/attachments/494194782198038565/694722200531632198/220px-Blue_rectangle.png",
+        "https://images-ext-2.discordapp.net/external/QRvaOZIbv3y0YGJsY2SicfW1ptXtZWyXtvQtqelUYpI/https/media.discordapp.net/attachments/727171016077475954/825849400911069204/815884161062666272.gif"
+      ]
+    },
+    {
+      "id": "749116083357736961",
+      "author": "237593967137390593",
+      "content": "Hello",
+      "embeds": [],
+      "attachments": []
+    },
+    {
+      "id": "749116083357736962",
+      "content": "Yes this is very cool",
+      "author": "237593967137390592",
+      "embeds": [],
+      "attachments": []
+    },
+    {
+      "id": "749116083357736963",
+      "content": "Beep Boop",
+      "author": "237593967137390590",
+      "embeds": [],
+      "attachments": []
+    }
+  ]
+}

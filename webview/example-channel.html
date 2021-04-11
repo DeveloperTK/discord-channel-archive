@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Discord Channel Archive Viewer</title>
+
+    <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/channel-header.css">
+    <link rel="stylesheet" href="css/member-list.css">
+    <link rel="stylesheet" href="css/content-view.css">
+</head>
+<body>
+
+<!-- Header -->
+
+<section class="channel-header-title channel-header-container dark-themed">
+    <div class="channel-header-children">
+        <div class="icon-wrapper" role="button" tabindex="-1">
+            <svg class="header-icon" height="24" viewBox="0 0 24 24" width="24">
+                <path clip-rule="evenodd" d="M5.88657 21C5.57547 21 5.3399 20.7189 5.39427 20.4126L6.00001 17H2.59511C2.28449 17 2.04905 16.7198 2.10259 16.4138L2.27759 15.4138C2.31946 15.1746 2.52722 15 2.77011 15H6.35001L7.41001 9H4.00511C3.69449 9 3.45905 8.71977 3.51259 8.41381L3.68759 7.41381C3.72946 7.17456 3.93722 7 4.18011 7H7.76001L8.39677 3.41262C8.43914 3.17391 8.64664 3 8.88907 3H9.87344C10.1845 3 10.4201 3.28107 10.3657 3.58738L9.76001 7H15.76L16.3968 3.41262C16.4391 3.17391 16.6466 3 16.8891 3H17.8734C18.1845 3 18.4201 3.28107 18.3657 3.58738L17.76 7H21.1649C21.4755 7 21.711 7.28023 21.6574 7.58619L21.4824 8.58619C21.4406 8.82544 21.2328 9 20.9899 9H17.41L16.35 15H19.7549C20.0655 15 20.301 15.2802 20.2474 15.5862L20.0724 16.5862C20.0306 16.8254 19.8228 17 19.5799 17H16L15.3632 20.5874C15.3209 20.8261 15.1134 21 14.8709 21H13.8866C13.5755 21 13.3399 20.7189 13.3943 20.4126L14 17H8.00001L7.36325 20.5874C7.32088 20.8261 7.11337 21 6.87094 21H5.88657ZM9.41045 9L8.35045 15H14.3504L15.4104 9H9.41045Z" fill="currentColor" fill-rule="evenodd"></path>
+            </svg>
+        </div>
+        <h3 class="channel-title-text">channel</h3>
+    </div>
+
+    <div class="channel-header-toolbar">
+        <!--download button-->
+        <div class="icon-wrapper clickable-child" role="button"
+             tabindex="0">
+            <svg class="success header-icon" height="24" viewBox="0 0 24 24" width="24" x="0" y="0">
+                <path class="updateIconForeground-3tnNZn" clip-rule="evenodd" d="M16.293 9.293L17.707 10.707L12 16.414L6.29297 10.707L7.70697 9.293L11 12.586V2H13V12.586L16.293 9.293ZM18 20V18H20V20C20 21.102 19.104 22 18 22H6C4.896 22 4 21.102 4 20V18H6V20H18Z" fill="currentColor" fill-rule="evenodd"></path>
+            </svg>
+        </div>
+
+        <!--inbox icon-->
+        <div class="icon-wrapper clickable-child" role="button" tabindex="0">
+            <svg class="header-icon" fill="none" height="24" viewBox="0 0 24 24" width="24" x="0"
+                 y="0">
+                <path d="M19 3H4.99C3.88 3 3.01 3.89 3.01 5L3 19C3 20.1 3.88 21 4.99 21H19C20.1 21 21 20.1 21 19V5C21 3.89 20.1 3 19 3ZM19 15H15C15 16.66 13.65 18 12 18C10.35 18 9 16.66 9 15H4.99V5H19V15Z" fill="currentColor"></path>
+            </svg>
+        </div>
+
+        <!--question mark icon-->
+        <a href="https://support.discord.com" rel="noreferrer noopener" tabindex="-1" target="_blank">
+            <div class="icon-wrapper clickable-child" role="button" tabindex="0">
+                <svg class="header-icon" height="24" viewBox="0 0 24 24" width="24" x="0" y="0">
+                    <path d="M12 2C6.486 2 2 6.487 2 12C2 17.515 6.486 22 12 22C17.514 22 22 17.515 22 12C22 6.487 17.514 2 12 2ZM12 18.25C11.31 18.25 10.75 17.691 10.75 17C10.75 16.31 11.31 15.75 12 15.75C12.69 15.75 13.25 16.31 13.25 17C13.25 17.691 12.69 18.25 12 18.25ZM13 13.875V15H11V12H12C13.104 12 14 11.103 14 10C14 8.896 13.104 8 12 8C10.896 8 10 8.896 10 10H8C8 7.795 9.795 6 12 6C14.205 6 16 7.795 16 10C16 11.861 14.723 13.429 13 13.875Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- content area -->
+
+<div class="content-area main">
+
+    <main class="chat-content">
+        <div class="messages-wrapper group-spacing-16">
+            <div class="content-scroller auto-content scroller-base disable-scroll-anchor" dir="ltr" style="overflow: hidden scroll; padding-right: 0px;" tabindex="-1">
+                <div class="scroller-content content">
+                    <div class="scroller-inner" role="log" tabindex="0">
+                        <div class="content-header-container">
+                            <h1 class="content-header-title">Willkommen bei #channel!</h1>
+                            <div class="size16 content-header-description">Das ist der Beginn des Kanals #channel.</div>
+                        </div>
+                        <div class="message" role="listitem" tabindex="-1">
+                            <div class="contents" role="document">
+                                <img alt=" " class="message-avatar" src="https://cdn.discordapp.com/avatars/237593967137390592/15094bba719a7dc06de49efa81fe2ce9.webp?size=256">
+                                <h2>
+                                    <span class="header-text">
+                                        <span style="color: rgb(231, 76, 60);" tabindex="0">
+                                            Christian
+                                        </span>
+                                    </span>
+                                    <span class="message-timestamp">
+                                        <time datetime="2021-04-10T20:39:34.143Z">
+                                            <i aria-hidden="true" class="timestamp-separator"> — </i>
+                                            heute um 22:39 Uhr
+                                        </time>
+                                    </span>
+                                </h2>
+                                <div class="message-content">message</div>
+                            </div>
+                            <div class="media-container"></div>
+                        </div>
+                        <div class="scroller-spacer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="members-wrap hidden-members">
+        <div class="members thin-scroller scrollerBase fade" data-jump-section="global" id="members-830542532005462086" orientation="vertical" style="overflow: hidden scroll; padding-right: 0px;" tabindex="0">
+            <div class="members-content">
+
+                <h2 class="members-group member-title"><span>Administration — 1</span></h2>
+
+                <div class="member member-container member-clickable" role="listitem" tabindex="-1">
+                    <div class="member-layout">
+                        <div class="avatar">
+                            <div class="avatar-image-wrapper" role="img" style="width: 32px; height: 32px;">
+                                <svg class="avatar-mask avatar-svg" height="32" viewBox="0 0 40 32" width="40">
+                                    <mask height="32" id="b59b9274-838f-4cd2-a90c-a79a67bc01b1" width="32">
+                                        <circle cx="16" cy="16" fill="white" r="16"></circle>
+                                        <rect color="black" height="16" rx="8" ry="8" width="16" x="19" y="19"></rect>
+                                    </mask>
+                                    <foreignObject height="32" mask="url(#b59b9274-838f-4cd2-a90c-a79a67bc01b1)" width="32" x="0" y="0">
+                                        <img alt=" " class="avatar-inner" src="https://cdn.discordapp.com/avatars/237593967137390592/15094bba719a7dc06de49efa81fe2ce9.png?size=256">
+                                    </foreignObject>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="member-content">
+                            <div class="name-and-decorators">
+                                <div class="member-name">
+                                    <span class="member-role-color" style="color: rgb(231, 76, 60);">Christian</span>
+                                </div>
+                                <svg class="owner-icon" height="24" viewBox="0 0 16 16" width="24">
+                                    <path clip-rule="evenodd" d="M13.6572 5.42868C13.8879 5.29002 14.1806 5.30402 14.3973 5.46468C14.6133 5.62602 14.7119 5.90068 14.6473 6.16202L13.3139 11.4954C13.2393 11.7927 12.9726 12.0007 12.6666 12.0007H3.33325C3.02725 12.0007 2.76058 11.792 2.68592 11.4954L1.35258 6.16202C1.28792 5.90068 1.38658 5.62602 1.60258 5.46468C1.81992 5.30468 2.11192 5.29068 2.34325 5.42868L5.13192 7.10202L7.44592 3.63068C7.46173 3.60697 7.48377 3.5913 7.50588 3.57559C7.5192 3.56612 7.53255 3.55663 7.54458 3.54535L6.90258 2.90268C6.77325 2.77335 6.77325 2.56068 6.90258 2.43135L7.76458 1.56935C7.89392 1.44002 8.10658 1.44002 8.23592 1.56935L9.09792 2.43135C9.22725 2.56068 9.22725 2.77335 9.09792 2.90268L8.45592 3.54535C8.46794 3.55686 8.48154 3.56651 8.49516 3.57618C8.51703 3.5917 8.53897 3.60727 8.55458 3.63068L10.8686 7.10202L13.6572 5.42868ZM2.66667 12.6673H13.3333V14.0007H2.66667V12.6673Z" fill="currentColor" fill-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="member member-container member-clickable" data-list-item-id="members-830542532005462086___0" index="0" role="listitem" tabindex="-1">
+                    <div class="member-layout">
+                        <div class="avatar">
+                            <div class="avatar-image-wrapper" role="img" style="width: 32px; height: 32px;">
+                                <svg class="avatar-mask avatar-svg" height="32" viewBox="0 0 40 32" width="40">
+                                    <mask height="32" id="b59b9274-838f-4cd2-a90c-a79a67bc01b1" width="32">
+                                        <circle cx="16" cy="16" fill="white" r="16"></circle>
+                                        <rect color="black" height="16" rx="8" ry="8" width="16" x="19" y="19"></rect>
+                                    </mask>
+                                    <foreignObject height="32" mask="url(#b59b9274-838f-4cd2-a90c-a79a67bc01b1)" width="32" x="0" y="0">
+                                        <img alt=" " class="avatar-inner" src="https://cdn.discordapp.com/avatars/237593967137390592/15094bba719a7dc06de49efa81fe2ce9.png?size=256">
+                                    </foreignObject>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="member-content">
+                            <div class="name-and-decorators">
+                                <div class="member-name">
+                                    <span class="member-role-color">Christian</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="members-group member-title"><span>Offline — 3</span></h2>
+
+                <div class="member member-container member-clickable" data-list-item-id="members-830542532005462086___1" index="1" role="listitem" tabindex="-1">
+                    <div class="member-layout">
+                        <div class="avatar">
+                            <div class="avatar-image-wrapper" role="img" style="width: 32px; height: 32px;">
+                                <svg class="avatar-mask avatar-svg" height="32" viewBox="0 0 40 32" width="40">
+                                    <foreignObject height="32" width="32" x="0" y="0">
+                                        <img alt=" " style="border-radius: 100%" class="avatar-inner" src="https://cdn.discordapp.com/avatars/777533574822887446/42e8b1b7d631cf145ea7af3321749081.png?size=256">
+                                    </foreignObject>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="member-content">
+                            <div class="name-and-decorators">
+                                <div class="member-name">
+                                    <span class="member-role-color">EliteGuard</span>
+                                </div>
+                                <span class="bot-tag">
+                                    <span class="bot-tag-text">BOT</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
