@@ -2,7 +2,8 @@
 
 This is a JSON based file format, design to store discord channel contents.
 Ideally this is stored as a BSON file to reduce file size, but regular JSON is also supported.
-This repository contains a description of the file structure, as well as a html viewer,
+This repository contains a description of the file structure, as well as an
+<a href="developertk.github.io/discord-channel-archive/webview/index.html">html viewer</a>,
 that displays channel archives in a human-readable way.
 
 ## JSON Format
