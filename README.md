@@ -17,7 +17,7 @@ that displays channel archives in a human-readable way.
 | topic | Discord channel topic | String |
 | roles | all sorted roles relevant to this scope | Object |
 | userdata | all users who author at least one message in this archive | Object |
-| roles | all archived message | Array |
+| messages | all archived message | Array |
 
 ### Roles Fields
 
